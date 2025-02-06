@@ -1107,10 +1107,10 @@ abstract class PlatformInAppWebViewController extends PlatformInterface
         'clearFocus is not implemented on the current platform');
   }
 
-  Future<bool> requestFocus() {
-    throw UnimplementedError(
-        'requestFocus is not implemented on the current platform');
-  }
+  // Future<bool> requestFocus() {
+  //   throw UnimplementedError(
+  //       'requestFocus is not implemented on the current platform');
+  // }
 
   ///{@template flutter_inappwebview_platform_interface.PlatformInAppWebViewController.setInputMethodEnabled}
   ///Enables/Disables the input method (system-supplied keyboard) whilst interacting with the webview.
