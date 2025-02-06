@@ -296,7 +296,7 @@ class InAppWebViewController {
   ///{@macro flutter_inappwebview_platform_interface.PlatformInAppWebViewController.clearFocus}
   Future<void> clearFocus() => platform.clearFocus();
 
-  Future<bool> requestFocus() => platform.requestFocus();
+  // Future<bool> requestFocus() => platform.requestFocus();
 
   ///{@macro flutter_inappwebview_platform_interface.PlatformInAppWebViewController.setInputMethodEnabled}
   Future<void> setInputMethodEnabled(bool enabled) =>
