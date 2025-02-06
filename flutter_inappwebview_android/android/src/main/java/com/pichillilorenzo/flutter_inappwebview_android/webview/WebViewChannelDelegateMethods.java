@@ -62,6 +62,7 @@ public enum WebViewChannelDelegateMethods {
   saveWebArchive,
   zoomIn,
   zoomOut,
+  requestFocus,
   clearFocus,
   requestFocus,
   setContextMenu,
@@ -83,5 +84,9 @@ public enum WebViewChannelDelegateMethods {
   canScrollVertically,
   canScrollHorizontally,
   isInFullscreen,
-  clearFormData
+  clearFormData,
+  hideInputMethod,
+  showInputMethod,
+  saveState,
+  restoreState,
 }
