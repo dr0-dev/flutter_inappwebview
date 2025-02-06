@@ -2279,12 +2279,12 @@ class AndroidInAppWebViewController extends PlatformInAppWebViewController
     return await channel?.invokeMethod('clearFocus', args);
   }
 
-  @override
-  Future<bool> requestFocus() async {
-    Map<String, dynamic> args = <String, dynamic>{};
-    return await channel?.invokeMethod<bool>('requestFocus', args) ??
-        false;
-  }
+  // @override
+  // Future<bool> requestFocus() async {
+  //   Map<String, dynamic> args = <String, dynamic>{};
+  //   return await channel?.invokeMethod<bool>('requestFocus', args) ??
+  //       false;
+  // }
 
   @override
   Future<void> showInputMethod() async {
