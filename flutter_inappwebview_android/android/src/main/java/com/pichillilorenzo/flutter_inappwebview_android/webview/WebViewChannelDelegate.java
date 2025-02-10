@@ -504,22 +504,22 @@ public class WebViewChannelDelegate extends ChannelDelegateImpl {
                     Log.d(LOG_TAG, "focused, I'm not going to focus");
                 }
                 break;
-      case requestFocus:
-        if (webView != null) {
-          boolean resultValue = false;
-          Integer direction = (Integer) call.argument("direction");
-          InAppWebViewRect previouslyFocusedRect = InAppWebViewRect.fromMap((Map<String, Object>) call.argument("previouslyFocusedRect"));
-          if (direction != null && previouslyFocusedRect != null) {
-            resultValue = webView.requestFocus(direction, previouslyFocusedRect.toRect());
-          } else if (direction != null) {
-            resultValue = webView.requestFocus(direction);
-          } else {
-            resultValue = webView.requestFocus();
-          }
-          result.success(resultValue);
-        } else {
-          result.success(false);
-        }break;
+//      case requestFocus:
+//        if (webView != null) {
+//          boolean resultValue = false;
+//          Integer direction = (Integer) call.argument("direction");
+//          InAppWebViewRect previouslyFocusedRect = InAppWebViewRect.fromMap((Map<String, Object>) call.argument("previouslyFocusedRect"));
+//          if (direction != null && previouslyFocusedRect != null) {
+//            resultValue = webView.requestFocus(direction, previouslyFocusedRect.toRect());
+//          } else if (direction != null) {
+//            resultValue = webView.requestFocus(direction);
+//          } else {
+//            resultValue = webView.requestFocus();
+//          }
+//          result.success(resultValue);
+//        } else {
+//          result.success(false);
+//        }break;
             case setContextMenu:
                 if (webView != null) {
                     Map<String, Object> contextMenu = (Map<String, Object>) call.argument("contextMenu");
